@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="apcliente" prefHeight="250.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.ab.controller.FormClienteController">
+<AnchorPane id="AnchorPane" fx:id="apcliente" prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ab.controller.FormClienteController">
   <children>
     <GridPane hgap="5.0" layoutX="56.0" layoutY="33.0" prefHeight="169.0" prefWidth="498.0" vgap="5.0">
       <children>
@@ -19,7 +19,10 @@
         </Label>
         <TextField id="txtnome" fx:id="edtnome" prefHeight="36.0" prefWidth="398.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
         <TextField id="txtestado" fx:id="edtCidade" editable="false" prefHeight="36.0" prefWidth="290.0" style="-fx-background-color:#eee;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <Button id="btnlookUp" fx:id="btnLookUp" mnemonicParsing="false" onAction="#buscarEstado" prefHeight="42.0" prefWidth="95.0" text="Listar Cidade" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button id="btnlookUp" fx:id="btnLookUp" mnemonicParsing="false" onAction="#buscarEstado" prefHeight="42.0" prefWidth="95.0" text="Listar Cidade" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></Button>
       </children>
       <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="100.0" />

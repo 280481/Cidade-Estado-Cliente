@@ -40,18 +40,18 @@ public class ClienteDao extends AbstractDao implements TableModelInterface{
 
     @Override
     public ArrayList<Object> getByCriterios(ICriteria c) {
-        // Cria a instrução sql
+       
         ISqlInstruction sql = this.newInstruction(ISqlInstruction.QueryType.SELECT);
-        // Parametriza a instrução SQL
+        
         sql.setCriterio(c);
         ArrayList<Cliente> clis = new ArrayList<>();
         try {
-            // Executa a sql
+            
             ArrayList<HashMap<String, Object>> dados = this.executeSql(sql);
             if (!dados.isEmpty()) {
 
                 for (HashMap<String, Object> row : dados) {
-                    // Cria um estado para cada linha que retornou do banco
+                    
                     Cliente cli = new Cliente();
                     cli.setId(((Long) row.get("id")));
                     cli.setNome((String) row.get("nome"));
@@ -120,7 +120,7 @@ public class ClienteDao extends AbstractDao implements TableModelInterface{
             String vlo = String.valueOf(cliente.getId());
             IFilter filtro = new IFilter("id", "=", vlo);
             criterio.addExpressions(filtro);
-            ///continuação
+            
             del.setCriterio(criterio);
             try {
                 executeSql(del);

@@ -6,12 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cidadeestado.FXMLDocumentController">
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cidadeestado.FXMLDocumentController">
   <children>
     <ToolBar>
       <items>
         <Button fx:id="btnEstado" mnemonicParsing="false" text="Pesquisar Estado" />
         <Button fx:id="btnCidade" mnemonicParsing="false" text="Pesquisar Cidade" />
+            <Button fx:id="btnCliente" mnemonicParsing="false" text="Pesquisar Cliente" />
       </items>
     </ToolBar>
     <StackPane fx:id="container" prefHeight="569.0" prefWidth="800.0" />

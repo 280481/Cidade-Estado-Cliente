@@ -58,6 +58,16 @@ public class CidadeEstado extends Application {
         Parent formlookup = loadLookup.load();
         FormControllerInterface cl = loadLookup.getController();
         
+        FXMLLoader loadFormCliente
+                = new FXMLLoader(
+                        getClass()
+                                .getResource("/br/com/ab/view/FormCliente.fxml")
+                );
+
+        Parent formcliente= loadFormCliente.load();
+        FormControllerInterface cci = loadFormCliente.getController();
+
+        
         
 
         FXMLLoader loadCrudView

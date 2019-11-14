@@ -11,7 +11,7 @@ package br.com.ab.model;
  */
 public class Cliente {
     public static void setCliente(Cliente cliente) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
     
     private long id;

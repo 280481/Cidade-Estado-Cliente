@@ -26,7 +26,18 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Button btnCidade;
     @FXML
+    private Button btnCliente;
+    
+    @FXML
     private StackPane container;
+    
+     public Button getBtnCliente() {
+        return btnCliente;
+    }
+
+    public void setBtnCliente(Button btnCliente) {
+        this.btnCliente = btnCliente;
+    }
     
    
     @Override
